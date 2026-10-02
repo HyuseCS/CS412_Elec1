@@ -21,9 +21,17 @@
 
 ## Formulas
 
-- **Expected information (entropy) of D:** Info(D) = − Σ pᵢ log₂(pᵢ)
-- **Expected information after splitting D on attribute A:** Info_A(D) = Σ (|Dⱼ| / |D|) × Info(Dⱼ)
-- **Information gain of attribute A:** Gain(A) = Info(D) − Info_A(D)
+**Expected information (entropy) of D:**
+
+$$Info(D) = -\sum_{i=1}^{m} p_i \log_2(p_i)$$
+
+**Expected information after splitting D on attribute A:**
+
+$$Info_A(D) = \sum_{j=1}^{v} \frac{|D_j|}{|D|} \times Info(D_j)$$
+
+**Information gain of attribute A:**
+
+$$Gain(A) = Info(D) - Info_A(D)$$
 
 ## Step 1: Expected information of D
 
