@@ -37,10 +37,14 @@ $$Gain(A) = Info(D) - Info_A(D)$$
 
 D has 14 tuples: 9 yes, 5 no.
 
-Info(D) = − (9/14) log₂(9/14) − (5/14) log₂(5/14)
-        = − (0.643)(−0.637) − (0.357)(−1.485)
-        = 0.410 + 0.530
-        = **0.940 bits**
+$$
+\begin{aligned}
+Info(D) &= -\frac{9}{14}\log_2\left(\frac{9}{14}\right) - \frac{5}{14}\log_2\left(\frac{5}{14}\right) \\
+&= -(0.643)(-0.637) - (0.357)(-1.485) \\
+&= 0.410 + 0.530 \\
+&= \mathbf{0.940 \text{ bits}}
+\end{aligned}
+$$
 
 ## a. Gain(income)
 
@@ -50,15 +54,21 @@ Info(D) = − (9/14) log₂(9/14) − (5/14) log₂(5/14)
 | medium | 6 | 4 | 2 |
 | low | 4 | 3 | 1 |
 
-- Info(high) = − (2/4) log₂(2/4) − (2/4) log₂(2/4) = 0.5 + 0.5 = 1.000
-- Info(medium) = − (4/6) log₂(4/6) − (2/6) log₂(2/6) = 0.390 + 0.528 = 0.918
-- Info(low) = − (3/4) log₂(3/4) − (1/4) log₂(1/4) = 0.311 + 0.500 = 0.811
+$$Info(high) = -\frac{2}{4}\log_2\left(\frac{2}{4}\right) - \frac{2}{4}\log_2\left(\frac{2}{4}\right) = 0.5 + 0.5 = 1.000$$
 
-Info_income(D) = (4/14)(1.000) + (6/14)(0.918) + (4/14)(0.811)
-               = 0.286 + 0.393 + 0.232
-               = 0.911 bits
+$$Info(medium) = -\frac{4}{6}\log_2\left(\frac{4}{6}\right) - \frac{2}{6}\log_2\left(\frac{2}{6}\right) = 0.390 + 0.528 = 0.918$$
 
-Gain(income) = 0.940 − 0.911 = **0.029 bits**
+$$Info(low) = -\frac{3}{4}\log_2\left(\frac{3}{4}\right) - \frac{1}{4}\log_2\left(\frac{1}{4}\right) = 0.311 + 0.500 = 0.811$$
+
+$$
+\begin{aligned}
+Info_{income}(D) &= \frac{4}{14}(1.000) + \frac{6}{14}(0.918) + \frac{4}{14}(0.811) \\
+&= 0.286 + 0.393 + 0.232 \\
+&= 0.911 \text{ bits}
+\end{aligned}
+$$
+
+$$Gain(income) = 0.940 - 0.911 = \mathbf{0.029 \text{ bits}}$$
 
 ## b. Gain(student)
 
@@ -67,14 +77,19 @@ Gain(income) = 0.940 − 0.911 = **0.029 bits**
 | yes | 7 | 6 | 1 |
 | no | 7 | 3 | 4 |
 
-- Info(yes) = − (6/7) log₂(6/7) − (1/7) log₂(1/7) = 0.191 + 0.401 = 0.592
-- Info(no) = − (3/7) log₂(3/7) − (4/7) log₂(4/7) = 0.524 + 0.461 = 0.985
+$$Info(yes) = -\frac{6}{7}\log_2\left(\frac{6}{7}\right) - \frac{1}{7}\log_2\left(\frac{1}{7}\right) = 0.191 + 0.401 = 0.592$$
 
-Info_student(D) = (7/14)(0.592) + (7/14)(0.985)
-                = 0.296 + 0.493
-                = 0.789 bits
+$$Info(no) = -\frac{3}{7}\log_2\left(\frac{3}{7}\right) - \frac{4}{7}\log_2\left(\frac{4}{7}\right) = 0.524 + 0.461 = 0.985$$
 
-Gain(student) = 0.940 − 0.789 = **0.151 bits**
+$$
+\begin{aligned}
+Info_{student}(D) &= \frac{7}{14}(0.592) + \frac{7}{14}(0.985) \\
+&= 0.296 + 0.493 \\
+&= 0.789 \text{ bits}
+\end{aligned}
+$$
+
+$$Gain(student) = 0.940 - 0.789 = \mathbf{0.151 \text{ bits}}$$
 
 ## c. Gain(credit_rating)
 
@@ -83,14 +98,19 @@ Gain(student) = 0.940 − 0.789 = **0.151 bits**
 | fair | 8 | 6 | 2 |
 | excellent | 6 | 3 | 3 |
 
-- Info(fair) = − (6/8) log₂(6/8) − (2/8) log₂(2/8) = 0.311 + 0.500 = 0.811
-- Info(excellent) = − (3/6) log₂(3/6) − (3/6) log₂(3/6) = 0.5 + 0.5 = 1.000
+$$Info(fair) = -\frac{6}{8}\log_2\left(\frac{6}{8}\right) - \frac{2}{8}\log_2\left(\frac{2}{8}\right) = 0.311 + 0.500 = 0.811$$
 
-Info_credit_rating(D) = (8/14)(0.811) + (6/14)(1.000)
-                      = 0.464 + 0.429
-                      = 0.892 bits
+$$Info(excellent) = -\frac{3}{6}\log_2\left(\frac{3}{6}\right) - \frac{3}{6}\log_2\left(\frac{3}{6}\right) = 0.5 + 0.5 = 1.000$$
 
-Gain(credit_rating) = 0.940 − 0.892 = **0.048 bits**
+$$
+\begin{aligned}
+Info_{credit\_rating}(D) &= \frac{8}{14}(0.811) + \frac{6}{14}(1.000) \\
+&= 0.464 + 0.429 \\
+&= 0.892 \text{ bits}
+\end{aligned}
+$$
+
+$$Gain(credit\_rating) = 0.940 - 0.892 = \mathbf{0.048 \text{ bits}}$$
 
 ## Summary
 
