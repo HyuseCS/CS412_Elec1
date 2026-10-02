@@ -21,9 +21,9 @@
 
 ## Formulas
 
-- Info(D) = − Σ pᵢ log₂(pᵢ)
-- Info_A(D) = Σ (|Dⱼ| / |D|) × Info(Dⱼ)
-- Gain(A) = Info(D) − Info_A(D)
+- **Expected information (entropy) of D:** Info(D) = − Σ pᵢ log₂(pᵢ)
+- **Expected information after splitting D on attribute A:** Info_A(D) = Σ (|Dⱼ| / |D|) × Info(Dⱼ)
+- **Information gain of attribute A:** Gain(A) = Info(D) − Info_A(D)
 
 ## Step 1: Expected information of D
 
