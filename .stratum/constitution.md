@@ -22,16 +22,17 @@ Rationale: the user copies the solution by hand, so each step must be clear and 
 
 ### III. Commit Hygiene
 
-- A commit MUST NOT include a classmate's notebook (for example `Pagalan_*.ipynb`), an instruction
-  image (`*.png` given by the instructor), a downloaded `adult.data`, or `venv/`.
+- A commit MUST NOT include a classmate's notebook (for example `Pagalan_*.ipynb`), a downloaded
+  `adult.data`, or `venv/`.
+- An instruction image (`*.png` given by the instructor) MAY be committed in its week's folder.
 - A notebook MUST run clean from top to bottom before it is committed.
 
 Rationale: the repo holds only the user's own, working submissions.
 
 ## Additional Constraints
 
-- The project `venv/` has no pandas or scikit-learn. Notebooks run in a scratch venv with those
-  packages, and any data file that the run downloads is deleted before the commit.
+- Notebooks run with the project `venv/` (it has pandas, scikit-learn, scipy, matplotlib and
+  nbconvert). Any data file that the run downloads is deleted before the commit.
 
 ## Development Workflow
 
@@ -45,4 +46,4 @@ Rationale: the repo holds only the user's own, working submissions.
   removed or redefined principle, MINOR for a new principle or section, PATCH for wording only.
 - Every piece of work is checked against these principles before it is committed.
 
-**Version**: 1.0.0 | **Ratified**: 2026-11-23 | **Last Amended**: 2026-11-23
+**Version**: 1.1.0 | **Ratified**: 2026-11-23 | **Last Amended**: 2026-11-23
