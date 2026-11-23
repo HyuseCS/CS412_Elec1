@@ -1,0 +1,20 @@
+{
+  "enabledPlugins": {
+    "ponytail@ponytail": false
+  },
+  "permissions": {
+    "allow": [
+      "mcp__plugin_stratum_figcraft__list_commands",
+      "mcp__plugin_stratum_figcraft__run_command",
+      "mcp__plugin_stratum_figcraft__batch",
+      "mcp__plugin_stratum_figcraft__create_node",
+      "mcp__plugin_stratum_figcraft__set_properties",
+      "mcp__plugin_stratum_figcraft__inspect_document",
+      "mcp__plugin_stratum_figcraft__get_node",
+      "mcp__plugin_stratum_figcraft__screenshot",
+      "mcp__plugin_stratum_figcraft__open_file",
+      "mcp__plugin_stratum_figcraft__save_file",
+      "mcp__plugin_stratum_figcraft__undo"
+    ]
+  }
+}
